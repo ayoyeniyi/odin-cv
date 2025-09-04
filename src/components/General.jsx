@@ -1,19 +1,22 @@
-export default function General() {
+import '../styles/General.css';
+
+export default function General({children}) {
     return (
         <div className="general">
+            <h1>{children}</h1>
             <div>
-                <label htmlFor="Name">Name:</label>
-                <input type="text" name="Name" id="full-name"/>
+                <label htmlFor="full-name">Name</label>
+                <input type="text" name="name" id="full-name"/>
             </div>
             
             <div>
-                <label htmlFor="Email">Email Address:</label>
-                <input type="email" name="Email" id="email" />
+                <label htmlFor="email">Email Address</label>
+                <input type="email" name="email" id="email" />
             </div>
             
             <div>
-                <label htmlFor="Telephone"></label>
-                <input type="tel" name="Telephone" id="phone-number" />
+                <label htmlFor="phone-number">Telephone</label>
+                <input type="tel" name="telephone" id="phone-number" />
             </div>
 
             <div>
