@@ -6,6 +6,8 @@ body {
 
 .user-input {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   border-right: solid;
   height: 100vh;
   width: 600px;

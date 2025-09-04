@@ -1,3 +1,21 @@
 .general {
     display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.general h2 {
+    text-align: center;
+}
+
+.gen-info {
+    display: flex;
+    gap: 40px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.email-holder, .name-holder, .tel-holder {
+    display: flex;
+    flex-direction: column;
 }
