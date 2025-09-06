@@ -18,8 +18,7 @@ export default function Experience({ children }) {
             </div>
 
             <div>
-                <button type="button">Submit</button>
-                <button type="button">Edit</button>
+                <button type="button" onClick={handleSave} className='btn'>{ saved ? 'Edit' : 'Save'}</button>
             </div>
         </div>
     );
