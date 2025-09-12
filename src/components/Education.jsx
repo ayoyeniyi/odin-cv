@@ -1,20 +1,28 @@
+import { useState } from "react";
+
 export default function Experience({ children }) {
+    const [saved, setSaved] = useState(false);
+
+    function handleSave() {
+        setSaved(!saved);
+    }
+    
     return (
-        <div className="experience">
+        <div className="education">
             <h2>{children}</h2>
             <div>
-                <label htmlFor="Name">Name:</label>
-                <input type="text" name="Name" id="full-name"/>
+                <label htmlFor="sch-name">School</label>
+                <input type="text" name="sch-name" id="sch-name"/>
             </div>
             
             <div>
-                <label htmlFor="Email">Email Address:</label>
-                <input type="email" name="Email" id="email" />
+                <label htmlFor="major">Major</label>
+                <input type="text" name="sch-major" id="sch-major" />
             </div>
             
             <div>
-                <label htmlFor="Telephone"></label>
-                <input type="tel" name="Telephone" id="phone-number" />
+                <label htmlFor="grad-date">Graduation Date</label>
+                <input type="date" name="grad-date" id="grad-date" />
             </div>
 
             <div>
