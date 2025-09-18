@@ -1,0 +1,30 @@
+.education {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.education h2 {
+    text-align: center;
+}
+
+.sch-info {
+    display: flex;
+    gap: 40px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.sch-holder, .mj-holder, .grad-holder {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    width: 70px;
+}
+
+.btn-holder {
+    align-self: flex-end;
+    margin-top: 15px;
+}
