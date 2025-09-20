@@ -18,7 +18,7 @@ export default function Education({ children }) {
                 </div>
             
                 <div className="mj-holder">
-                    <label htmlFor="major">Major</label>
+                    <label htmlFor="sch-major">Major</label>
                     <input type="text" name="sch-major" id="sch-major" />
                 </div>
             </div>
