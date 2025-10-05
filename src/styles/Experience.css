@@ -1,0 +1,60 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 334px;
+}
+
+.experience h2 {
+    text-align: center;
+}
+
+.cmp-info {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    /* margin-top: 5px; */
+    margin-bottom: 15px;
+}
+
+.top-row, .bot-row {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.cmp-holder, .role-holder, 
+.start-holder, .end-holder, .rsp-holder {
+    display: flex;
+    flex-direction: column;
+}
+
+.bot-row {
+    justify-content: space-between;
+}
+
+#responsibilities {
+    width: 100%;
+}
+
+.save-btn, .add-btn {
+    width: 70px;
+}
+
+.exp-btn-holder {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+/* .add-btn-holder {
+    align-self: flex-start;
+    margin-top: 15px;
+}
+
+.save-btn-holder {
+    align-self: flex-end;
+    margin-top: 15px;
+} */
