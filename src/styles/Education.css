@@ -20,11 +20,3 @@
     flex-direction: column;
 }
 
-.btn {
-    width: 70px;
-}
-
-.btn-holder {
-    align-self: flex-end;
-    margin-top: 15px;
-}

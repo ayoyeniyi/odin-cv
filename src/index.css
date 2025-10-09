@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.btn, .submit-btn {
+    width: 70px;
+}
+
+.btn-holder {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+}

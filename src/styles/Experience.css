@@ -37,24 +37,3 @@
 #responsibilities {
     width: 100%;
 }
-
-.save-btn, .add-btn {
-    width: 70px;
-}
-
-.exp-btn-holder {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding-top: 15px;
-}
-
-/* .add-btn-holder {
-    align-self: flex-start;
-    margin-top: 15px;
-}
-
-.save-btn-holder {
-    align-self: flex-end;
-    margin-top: 15px;
-} */
