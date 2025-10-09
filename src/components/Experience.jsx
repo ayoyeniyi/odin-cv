@@ -9,7 +9,7 @@ export default function Experience({children}) {
     }
     
     return (
-        <div className="experience">
+        <section className="experience">
             <h2>{children}</h2>
             <div className="cmp-info">
                 <div className="top-row">
@@ -43,15 +43,10 @@ export default function Experience({children}) {
                 <textarea name="responsibilities" id="responsibilities" />
             </div>
 
-            <div className="exp-btn-holder">
-                <div className="add-btn-holder">
-                    <button type="button" className='add-btn'>Add</button>
-                </div>
-
-                <div className="save-btn-holder">
-                    <button type="button" onClick={handleSave} className='save-btn'>{ saved ? 'Edit' : 'Save'}</button>
-                </div>
+            <div className="btn-holder">
+                <button className="submit-btn" type="submit">Submit</button>
+                <button type="button" onClick={handleSave} className='btn'>{ saved ? 'Edit' : 'Save'}</button>
             </div>
-        </div>
+        </section>
     );
 }

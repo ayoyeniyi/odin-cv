@@ -1,15 +1,9 @@
-import { useState } from "react";
+
 import '../styles/Education.css';
 
 export default function Education({ children }) {
-    const [saved, setSaved] = useState(false);
-
-    function handleSave() {
-        setSaved(!saved);
-    }
-    
     return (
-        <div className="education">
+        <section className="education">
             <h2>{children}</h2>
             <div className="sch-info">
                 <div className='sch-holder'>
@@ -29,8 +23,9 @@ export default function Education({ children }) {
             </div>
 
             <div className="btn-holder">
-                <button type="button" onClick={handleSave} className='btn'>{ saved ? 'Edit' : 'Save'}</button>
+                <button className="submit-btn" type="submit">Submit</button>
+                <button type="button" className='btn'>Edit</button>
             </div>
-        </div>
+        </section>
     );
 }

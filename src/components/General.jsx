@@ -9,7 +9,7 @@ export default function General({children}) {
     }
 
     return (
-        <div className="general">
+        <section className="general">
             <h2>{children}</h2>
             <div className='gen-info'>
                 <div className='name-holder'>
@@ -29,8 +29,9 @@ export default function General({children}) {
             </div>
 
             <div className='btn-holder'>
+                <button className="submit-btn" type="submit">Submit</button>
                 <button type="button" onClick={handleSave} className='btn'>{ saved ? 'Edit' : 'Save'}</button>
             </div>
-        </div>
+        </section>
     );
 }
