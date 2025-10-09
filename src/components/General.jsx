@@ -1,13 +1,6 @@
 import '../styles/General.css';
-import { useState } from 'react';
 
 export default function General({children}) {
-    const [saved, setSaved] = useState(false);
-
-    function handleSave() {
-        setSaved(!saved);
-    }
-
     return (
         <section className="general">
             <h2>{children}</h2>
@@ -30,7 +23,7 @@ export default function General({children}) {
 
             <div className='btn-holder'>
                 <button className="submit-btn" type="submit">Submit</button>
-                <button type="button" onClick={handleSave} className='btn'>{ saved ? 'Edit' : 'Save'}</button>
+                <button type="button" className='btn'>Edit</button>
             </div>
         </section>
     );
