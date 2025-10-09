@@ -8,12 +8,12 @@ export default function Experience({children}) {
                 <div className="top-row">
                     <div className='cmp-holder'>
                         <label htmlFor="cmp-name">Company</label>
-                        <input type="text" name="cmp-name" id="cmp-name"/>
+                        <input type="text" name="cmp-name" id="cmp-name" placeholder='company'/>
                     </div>
             
                     <div className="role-holder">
                         <label htmlFor="role">Role</label>
-                        <input type="text" name="role" id="role" />
+                        <input type="text" name="role" id="role" placeholder='role'/>
                     </div>
                 </div>
                 
@@ -33,7 +33,7 @@ export default function Experience({children}) {
             
             <div className="rsp-holder">
                 <label htmlFor="responsibilties">Responsibilities</label>
-                <textarea name="responsibilities" id="responsibilities" />
+                <textarea name="responsibilities" id="responsibilities" placeholder='Stuff I did...'/>
             </div>
 
             <div className="btn-holder">
