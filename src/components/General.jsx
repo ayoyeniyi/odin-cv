@@ -1,6 +1,6 @@
 import '../styles/General.css';
 
-export default function General({children}) {
+export default function General({ data, setData, children }) {
     return (
         <section className="general">
             <h2>{children}</h2>

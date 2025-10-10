@@ -1,6 +1,6 @@
 import '../styles/Experience.css';
 
-export default function Experience({children}) {
+export default function Experience({ data, setData, children }) {
     return (
         <section className="experience">
             <h2>{children}</h2>

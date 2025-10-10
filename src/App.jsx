@@ -29,10 +29,10 @@ function App() {
   return (
     <>
     <div className='user-input'>
-      <UserInput></UserInput>
+      <UserInput data={userData} setData={setUserData}></UserInput>
     </div>
     <div className='cv-container'>
-      <CV></CV>
+      <CV data={userData}></CV>
     </div>
     </>
   )

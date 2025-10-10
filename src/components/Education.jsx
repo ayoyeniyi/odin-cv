@@ -1,6 +1,6 @@
 import '../styles/Education.css';
 
-export default function Education({ children }) {
+export default function Education({ data, setData, children }) {
     return (
         <section className="education">
             <h2>{children}</h2>
