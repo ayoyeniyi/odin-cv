@@ -1,4 +1,4 @@
-export default function CV({ data, setData }) {
+export default function CV({ data }) {
     return (
         <article>
             <header></header>

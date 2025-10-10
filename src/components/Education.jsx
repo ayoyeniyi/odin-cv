@@ -1,6 +1,10 @@
 import '../styles/Education.css';
 
 export default function Education({ data, setData, children }) {
+    function handleClick() {
+        setData()
+    }
+
     return (
         <section className="education">
             <h2>{children}</h2>
@@ -22,7 +26,7 @@ export default function Education({ data, setData, children }) {
             </div>
 
             <div className="btn-holder">
-                <button className="submit-btn" type="submit">Submit</button>
+                <button className="submit-btn" type="submit" onClick={handleClick}>Submit</button>
                 <button type="button" className='btn'>Edit</button>
             </div>
         </section>

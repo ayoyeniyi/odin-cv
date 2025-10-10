@@ -1,6 +1,10 @@
 import '../styles/General.css';
 
 export default function General({ data, setData, children }) {
+    function handleClick() {
+        setData()
+    }
+
     return (
         <section className="general">
             <h2>{children}</h2>
@@ -22,7 +26,7 @@ export default function General({ data, setData, children }) {
             </div>
 
             <div className='btn-holder'>
-                <button className="submit-btn" type="submit">Submit</button>
+                <button className="submit-btn" type="submit" onClick={handleClick}>Submit</button>
                 <button type="button" className='btn'>Edit</button>
             </div>
         </section>

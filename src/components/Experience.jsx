@@ -1,6 +1,10 @@
 import '../styles/Experience.css';
 
 export default function Experience({ data, setData, children }) {
+    function handleClick() {
+        setData()
+    }
+
     return (
         <section className="experience">
             <h2>{children}</h2>
@@ -37,7 +41,7 @@ export default function Experience({ data, setData, children }) {
             </div>
 
             <div className="btn-holder">
-                <button className="submit-btn" type="submit">Submit</button>
+                <button className="submit-btn" type="submit" onClick={handleClick}>Submit</button>
                 <button type="button" className='btn'>Edit</button>
             </div>
         </section>
