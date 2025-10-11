@@ -1,8 +1,20 @@
 import '../styles/General.css';
 
-export default function General({ data, setData }) {
-    function handleClick() {
-        setData()
+export default function General({ setData }) {
+    function handleClick(formData) {
+        const name = formData.get("name");
+        const email = formData.get("email");
+        const phone = formData.get("telephone");
+
+        setData(prevdata => (
+            {
+                ...prevdata,
+                name,
+                email,
+                phone
+            }
+        ))
+
     }
 
     return (

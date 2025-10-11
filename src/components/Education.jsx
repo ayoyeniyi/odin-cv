@@ -1,8 +1,19 @@
 import '../styles/Education.css';
 
-export default function Education({ data, setData }) {
-    function handleClick() {
-        setData()
+export default function Education({ setData }) {
+    function handleClick(formData) {
+        const school = formData.get("sch-name");
+        const major = formData.get("sch-major");
+        const gradDate = formData.get("grad-date");
+
+        setData(prevData => (
+            {
+                ...prevData,
+                school,
+                major,
+                gradDate
+            }
+        ))
     }
 
     return (

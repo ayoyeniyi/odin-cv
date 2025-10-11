@@ -1,8 +1,23 @@
 import '../styles/Experience.css';
 
-export default function Experience({ data, setData }) {
-    function handleClick() {
-        setData()
+export default function Experience({ setData }) {
+    function handleClick(formData) {
+        const company = formData.get("cmp-name");
+        const role = formData.get("role");
+        const startDate = formData.get("start-date");
+        const endDate = formData.get("end-date");
+        const responsibilities = formData.get("responsibilities");
+
+        setData(prevData => (
+            {
+                ...prevData,
+                company,
+                role,
+                startDate,
+                endDate,
+                responsibilities
+            }
+        ))
     }
 
     return (
