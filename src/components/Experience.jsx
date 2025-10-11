@@ -41,7 +41,7 @@ export default function Experience({ data, setData }) {
             </div>
 
             <div className="btn-holder">
-                <button className="submit-btn" type="submit" onClick={handleClick}>Submit</button>
+                <input className="submit-btn" type="submit" onClick={handleClick} />
                 <button type="button" className='btn'>Edit</button>
             </div>
         </section>
