@@ -1,13 +1,13 @@
 import '../styles/General.css';
 
-export default function General({ data, setData, children }) {
+export default function General({ data, setData }) {
     function handleClick() {
         setData()
     }
 
     return (
         <section className="general">
-            <h2>{children}</h2>
+            <h2>General</h2>
             <div className='gen-info'>
                 <div className='name-holder'>
                     <label htmlFor="full-name">Name</label>

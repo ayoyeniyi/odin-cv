@@ -12,9 +12,9 @@ export default function UserInput({
 }) {
     return (
         <article>
-            <General data={general} setData={setGeneral}>General</General>
-            <Education data={education} setData={setEducation}>Education</Education>
-            <Experience data={experience} setData={setExperience}>Experience</Experience>
+            <General data={general} setData={setGeneral} />
+            <Education data={education} setData={setEducation} />
+            <Experience data={experience} setData={setExperience} />
         </article>
     );
 }

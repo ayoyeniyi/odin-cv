@@ -1,13 +1,13 @@
 import '../styles/Experience.css';
 
-export default function Experience({ data, setData, children }) {
+export default function Experience({ data, setData }) {
     function handleClick() {
         setData()
     }
 
     return (
         <section className="experience">
-            <h2>{children}</h2>
+            <h2>Experience</h2>
             <div className="cmp-info">
                 <div className="top-row">
                     <div className='cmp-holder'>

@@ -1,13 +1,13 @@
 import '../styles/Education.css';
 
-export default function Education({ data, setData, children }) {
+export default function Education({ data, setData }) {
     function handleClick() {
         setData()
     }
 
     return (
         <section className="education">
-            <h2>{children}</h2>
+            <h2>Education</h2>
             <div className="sch-info">
                 <div className='sch-holder'>
                     <label htmlFor="sch-name">School</label>
