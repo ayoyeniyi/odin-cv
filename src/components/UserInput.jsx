@@ -2,12 +2,19 @@ import General from "./General";
 import Education from "./Education";
 import Experience from "./Experience";
 
-export default function UserInput({ data, setData }) {
+export default function UserInput({ 
+    general,
+    setGeneral, 
+    education, 
+    setEducation, 
+    experience, 
+    setExperience 
+}) {
     return (
         <article>
-            <General data={data} setData={setData}>General</General>
-            <Education data={data} setData={setData}>Education</Education>
-            <Experience data={data} setData={setData}>Experience</Experience>
+            <General data={general} setData={setGeneral}>General</General>
+            <Education data={education} setData={setEducation}>Education</Education>
+            <Experience data={experience} setData={setExperience}>Experience</Experience>
         </article>
     );
 }

@@ -4,35 +4,44 @@ import CV from './components/CV';
 import './App.css';
 
 function App() {
-  const [userData, setUserData] = useState({
-    general: {
+  const [genData, setGenData] = useState({
       name: "",
       email: "",
       phone: ""
-    },
+  });
 
-    education: {
-      school: "",
-      major: "",
-      gradDate: ""
-    },
+  const [eduData, setEduData] = useState({
+    school: "",
+    major: "",
+    gradDate: ""
+  });
 
-    experience: {
-      company: "",
+  const [expData, setExpData] = useState({
+    company: "",
       role: "",
       start: "",
       end: "",
       responsibilities: ""
-    }
   });
 
   return (
     <>
     <div className='user-input'>
-      <UserInput data={userData} setData={setUserData}></UserInput>
+      <UserInput 
+        general={genData}
+        setGeneral={setGenData}
+        education={eduData}
+        setEducation={setEduData}
+        experience={expData}
+        setExperience={setExpData}
+      />
     </div>
     <div className='cv-container'>
-      <CV data={userData}></CV>
+      <CV 
+        general={genData}
+        education={eduData}
+        experience={expData}
+      />
     </div>
     </>
   )

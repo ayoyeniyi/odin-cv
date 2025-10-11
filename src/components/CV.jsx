@@ -1,4 +1,8 @@
-export default function CV({ data }) {
+export default function CV({
+    general, 
+    education,  
+    experience, 
+}) {
     return (
         <article>
             <header></header>
