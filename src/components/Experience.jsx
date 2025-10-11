@@ -6,7 +6,7 @@ export default function Experience({ data, setData }) {
     }
 
     return (
-        <section className="experience">
+        <form className="experience" action={handleClick}>
             <h2>Experience</h2>
             <div className="cmp-info">
                 <div className="top-row">
@@ -41,9 +41,9 @@ export default function Experience({ data, setData }) {
             </div>
 
             <div className="btn-holder">
-                <input className="submit-btn" type="submit" onClick={handleClick} />
+                <input className="submit-btn" type="submit"/>
                 <button type="button" className='btn'>Edit</button>
             </div>
-        </section>
+        </form>
     );
 }

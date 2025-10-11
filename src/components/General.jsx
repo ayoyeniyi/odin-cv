@@ -6,7 +6,7 @@ export default function General({ data, setData }) {
     }
 
     return (
-        <section className="general">
+        <form className="general" action={handleClick}>
             <h2>General</h2>
             <div className='gen-info'>
                 <div className='name-holder'>
@@ -26,9 +26,9 @@ export default function General({ data, setData }) {
             </div>
 
             <div className='btn-holder'>
-                <input className="submit-btn" type="submit" onClick={handleClick} />
+                <input className="submit-btn" type="submit"/>
                 <button type="button" className='btn'>Edit</button>
             </div>
-        </section>
+        </form>
     );
 }

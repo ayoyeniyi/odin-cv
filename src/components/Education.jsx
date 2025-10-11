@@ -6,7 +6,7 @@ export default function Education({ data, setData }) {
     }
 
     return (
-        <section className="education">
+        <form className="education" action={handleClick}>
             <h2>Education</h2>
             <div className="sch-info">
                 <div className='sch-holder'>
@@ -26,9 +26,9 @@ export default function Education({ data, setData }) {
             </div>
 
             <div className="btn-holder">
-                <input className="submit-btn" type="submit" onClick={handleClick} />
+                <input className="submit-btn" type="submit"/>
                 <button type="button" className='btn'>Edit</button>
             </div>
-        </section>
+        </form>
     );
 }
