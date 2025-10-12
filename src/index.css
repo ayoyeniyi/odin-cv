@@ -13,3 +13,8 @@ body {
     margin-top: 15px;
     width: 100%;
 }
+
+#root {
+    display: flex;
+    flex-direction: row;
+}
