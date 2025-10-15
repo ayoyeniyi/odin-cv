@@ -15,8 +15,17 @@ export default function CV({
                 <span className='cv-number'>{general.phone}</span>
             </div>
             <main>
-                <section></section>
-                <section></section>
+                <section className='edu-section'>
+                    <h2>Education</h2>
+                    <div className='school-div'>
+                        <span>{education.school}</span>
+                        <span>{education.major}</span>
+                    </div>
+                    <span>Graduation Date: {education.gradDate}</span>
+                </section>
+                <section>
+                    <h2>Experience</h2>
+                </section>
             </main>
         </article>
     )
