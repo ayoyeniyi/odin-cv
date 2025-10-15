@@ -1,0 +1,26 @@
+.cv-body {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 100%;
+}
+
+.cv-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: grey;
+}
+
+.cv-header > h1 {
+    margin: 0;
+}
+
+.cv-info {
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
