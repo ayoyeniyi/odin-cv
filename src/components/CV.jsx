@@ -23,9 +23,9 @@ export default function CV({
                     </div>
                     <span>Graduation Date: {education.gradDate}</span>
                 </section>
-                <section>
+                <section className='role-section'>
                     <h2>Experience</h2>
-                    <div className='role-section'>
+                    <div>
                         <div>{experience.company}</div>
                         <div>{experience.role}</div>
                     </div>
