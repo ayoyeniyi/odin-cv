@@ -5,23 +5,23 @@ import './App.css';
 
 function App() {
   const [genData, setGenData] = useState({
-      name: "",
-      email: "",
-      phone: ""
+    name: "Bill Gates",
+    email: "billgates@gmail.com",
+    phone: "000123456"
   });
 
   const [eduData, setEduData] = useState({
-    school: "",
-    major: "",
-    gradDate: ""
+    school: "Harvard University",
+    major: "Computer Science",
+    gradDate: "1974-12-13"
   });
 
   const [expData, setExpData] = useState({
-    company: "",
-      role: "",
-      start: "",
-      end: "",
-      responsibilities: ""
+    company: "Microsoft",
+    role: "Founder",
+    start: "1975-04-04",
+    end: "2000-01-01",
+    responsibilities: "Developed the company. Made everything look great, I guess. Did a lot more too but hey, reach out to learn more?"
   });
 
   return (
