@@ -25,6 +25,16 @@ export default function CV({
                 </section>
                 <section>
                     <h2>Experience</h2>
+                    <div className='role-section'>
+                        <div>{experience.company}</div>
+                        <div>{experience.role}</div>
+                    </div>
+                    <div className='date'>
+                        <span>{experience.start} to {experience.end}</span>
+                    </div>
+                    <div>
+                        <p>{experience.responsibilities}</p>
+                    </div>
                 </section>
             </main>
         </article>
